@@ -307,11 +307,11 @@ Distribuição de responsabilidades inspirada na seção 7.2 do documento oficia
 
 | Papel | Lead | Responsabilidades |
 |-------|------|-------------------|
-| Product Owner | A definir | Alinhamento com o problema GoodWe; consolidação do README; apresentação do vídeo final |
-| Tech Lead | A definir | Stack, esqueleto de código, configuração do repositório, revisão de commits |
-| Prompt Engineer | A definir | Iteração do system prompt; documentação do diário de iteração |
-| QA / Testes | A definir | Execução do protocolo de teste; registro de resultados; identificação de regressões |
-| Documentação | A definir | Manutenção do README; preparação do fluxograma; roteiro do vídeo de demonstração |
+| Product Owner | Leticia Aiko Okano | Alinhamento com o problema GoodWe; consolidação do README; apresentação do vídeo final |
+| Tech Lead | Joao Pedro do Vale Quagliano | Stack, esqueleto de código, configuração do repositório, revisão de commits |
+| Prompt Engineer | Guilherme De Lucena Fontes | Iteração do system prompt; documentação do diário de iteração |
+| QA / Testes | Enzo Scattolin Furtado / Thiago Calazans Luz Nakano | Execução do protocolo de teste; registro de resultados; identificação de regressões |
+| Documentação | Matheus Levi Dagel | Manutenção do README; preparação do fluxograma; roteiro do vídeo de demonstração |
 
 > Os leads serão atribuídos na primeira reunião de Sprint 2.
 
