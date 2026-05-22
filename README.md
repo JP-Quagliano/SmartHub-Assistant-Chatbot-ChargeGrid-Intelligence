@@ -3,8 +3,8 @@
 > Camada conversacional do produto ChargeGrid SmartHub, projetada para apoiar o operador comercial de eletropostos GoodWe na resolução de dúvidas operacionais de primeiro nível.
 
 **EV Challenge 2026 · FIAP × GoodWe**
-Disciplina: **Prompt and Artificial Intelligence** · 1º Ano de Ciência da Computação · Semestre 2026.1
-Professor: Jorge Luiz Gomes
+Disciplina: **Prompt and Artificial Intelligence** e **Soluções em Energias Renováveis e Sustentáveis** · 1º Ano de Ciência da Computação · Semestre 2026.1
+Professor: Jorge Luiz Gomes e ANDRÉ TRITIACK DE FARIAS
 
 ---
 
