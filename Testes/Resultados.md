@@ -151,9 +151,9 @@
 
 | Métrica | Valor |
 |---------|-------|
-| Casos adequados | 9 / 10 |
-| Casos parcialmente adequados | — / 10 |
-| Casos inadequados | 1/ 10 |
+| Casos adequados | 10 / 10 |
+| Casos parcialmente adequados | 0 / 10 |
+| Casos inadequados | 0 / 10 |
 
 **Decisão de iteração:** se 3 ou mais casos resultarem em "Inadequada", incrementar para system prompt `v1.1` e documentar em `/prompts/iteracoes.md`.
 
