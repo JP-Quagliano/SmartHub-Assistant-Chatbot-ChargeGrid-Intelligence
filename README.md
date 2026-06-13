@@ -233,7 +233,7 @@ python chatbot.py
 | Marco | Entrega | Status |
 |-------|---------|--------|
 | **Sprint 1** | Planejamento técnico, system prompt v1.0, modelo de teste, fluxograma, README | ✅ Concluído |
-| **Sprint 2** | Chatbot funcional, execução do protocolo de teste, vídeo de demonstração | ⏳ Em planejamento |
+| **Sprint 2** | Chatbot funcional, execução do protocolo de teste, vídeo de demonstração | ✅ Concluído |
 | Sprint 2 — Diferenciais opcionais | RAG com ChromaDB, function calling, interface Streamlit, suporte bilíngue PT/EN | ⏳ Sob avaliação |
 
 ---
