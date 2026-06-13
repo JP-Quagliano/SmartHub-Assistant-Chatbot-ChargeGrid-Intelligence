@@ -1,126 +1,44 @@
-# =============================================================================
-# .gitignore — SmartHub Assistant
-# EV Challenge 2026 · FIAP × GoodWe · Prompt and Artificial Intelligence
-# =============================================================================
-
-# -----------------------------------------------------------------------------
-# CREDENCIAIS — NUNCA COMMITAR
-# Penalidade automática na rubrica da Sprint 2 (Frente B, faixa 0-11) se uma
-# chave de API for versionada. Veja seção 5.5 do documento oficial do Challenge.
-# -----------------------------------------------------------------------------
+# Credenciais — NUNCA versionar
 .env
-.env.local
-.env.*.local
-*.pem
-*.key
-secrets/
-credentials.json
-client_secret*.json
+*.env
+.env.*
 
-# -----------------------------------------------------------------------------
-# Python — bytecode, caches e distribuição
-# -----------------------------------------------------------------------------
+# Chaves de API expostas acidentalmente
+*api_key*
+*secret*
+
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
+*.pyo
+*.pyd
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
-
-# -----------------------------------------------------------------------------
-# Ambientes virtuais
-# -----------------------------------------------------------------------------
+*.egg-info/
+dist/
+build/
+.eggs/
 .venv/
 venv/
 env/
-ENV/
-env.bak/
-venv.bak/
 
-# -----------------------------------------------------------------------------
-# Jupyter / Colab
-# -----------------------------------------------------------------------------
+# Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
-profile_default/
-ipython_config.py
 
-# -----------------------------------------------------------------------------
-# Vector store (ChromaDB) — Sprint 2 opcional (RAG)
-# -----------------------------------------------------------------------------
-chroma_db/
-*.parquet
-*.duckdb
-*.duckdb.wal
+# Colab temporários
+/content/
 
-# -----------------------------------------------------------------------------
-# Logs e artefatos de execução
-# -----------------------------------------------------------------------------
-*.log
-logs/
-*.tmp
-*.temp
-.cache/
-
-# -----------------------------------------------------------------------------
-# IDEs e editores
-# -----------------------------------------------------------------------------
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
-*.swn
-*~
-.project
-.pydevproject
 
-# -----------------------------------------------------------------------------
 # Sistema operacional
-# -----------------------------------------------------------------------------
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 desktop.ini
 
-# -----------------------------------------------------------------------------
-# Testes e cobertura (preparação para Sprint 2)
-# -----------------------------------------------------------------------------
-.pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
-.tox/
-.nox/
-coverage.xml
-*.cover
-.hypothesis/
-
-# -----------------------------------------------------------------------------
-# Tipo: arquivos pesados que não pertencem ao repositório
-# -----------------------------------------------------------------------------
-*.zip
-*.tar.gz
-*.rar
-*.7z
-*.mp4
-*.mov
-*.avi
+# Logs
+*.log

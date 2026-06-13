@@ -1,0 +1,19 @@
+# SmartHub Assistant — dependências Python
+# EV Challenge 2026 · FIAP × GoodWe
+#
+# Instalação:
+#   pip install -r requirements.txt
+#
+# Todas as dependências são gratuitas, conforme exigido pelo regulamento (seção 6.1).
+
+# --- LLM e orquestração ---
+langchain>=0.2.0
+langchain-google-genai>=1.0.0      # integração Gemini (provedor principal)
+langchain-groq>=0.1.0              # integração Groq + Llama (fallback)
+langchain-core>=0.2.0
+
+# --- Interface web (diferencial Sprint 2) ---
+streamlit>=1.30.0
+
+# --- Utilitários ---
+python-dotenv>=1.0.0               # leitura de .env local (alternativa ao export)

@@ -211,7 +211,7 @@ A execução do protocolo está prevista para a Sprint 2, com resultados a serem
 ### Execução local
 
 ```bash
-git clone https://github.com/<organizacao>/smarthub-assistant.git
+git clone https://github.com/JP-Quagliano/SmartHub-Assistant-Chatbot-ChargeGrid-Intelligence
 cd smarthub-assistant
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
