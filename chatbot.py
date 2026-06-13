@@ -152,7 +152,7 @@ def carregar_modelo(provedor: str) -> BaseChatModel:
             api_key=chave,
         )
 
-    # Padrão: Gemini 2.0 Flash
+    # Padrão: Gemini 2.5 Flash
     chave = os.environ.get("GOOGLE_API_KEY")
     if not chave:
         raise RuntimeError(
@@ -161,10 +161,10 @@ def carregar_modelo(provedor: str) -> BaseChatModel:
             "Token gratuito disponível em: https://aistudio.google.com/app/apikey"
         )
     return ChatGoogleGenerativeAI(
-        model="gemini-2.0-flash",
-        temperature=TEMPERATURA,
-        google_api_key=chave,
-    )
+    model="gemini-2.5-flash",   # modelo atual do free tier
+    temperature=TEMPERATURA,
+    google_api_key=os.environ.get("GOOGLE_API_KEY"),
+)
 
 
 def construir_historico(
