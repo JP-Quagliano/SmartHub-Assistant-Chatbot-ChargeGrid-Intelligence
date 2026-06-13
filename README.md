@@ -100,7 +100,7 @@ O grupo selecionou o **Contexto A — ChargeGrid Intelligence (uso comercial)**,
 
 | Camada | Tecnologia | Versão |
 |--------|-----------|--------|
-| Modelo de Linguagem (LLM) | **Google Gemini 2.0 Flash** (via Google AI Studio) | API v1 |
+| Modelo de Linguagem (LLM) | **Google Gemini 2.5 Flash** (via Google AI Studio) | API v1 |
 | Orquestração de prompts | **LangChain** | `>=0.2.0` |
 | Linguagem | **Python** | `>=3.10` |
 | Ambiente de execução | Google Colab (primário) · VS Code local (secundário) | — |
@@ -108,13 +108,13 @@ O grupo selecionou o **Contexto A — ChargeGrid Intelligence (uso comercial)**,
 | Interface (Sprint 2) | **Streamlit** | `>=1.30` |
 | Vector store (Sprint 2 — opcional para RAG) | **ChromaDB** | `>=0.4` |
 
-### Comparativo — por que Gemini 2.0 Flash
+### Comparativo — por que Gemini 2.5 Flash
 
 A escolha do LLM foi feita comparando quatro opções aprovadas pelo regulamento (seção 6.1 do documento oficial — todas com custo zero):
 
 | Opção | Prós | Contras | Decisão |
 |-------|------|---------|---------|
-| **Gemini 2.0 Flash** | Free tier real (60 req/min, 1M tokens/dia); qualidade alta em português brasileiro; function calling nativo; multimodal (preparado para imagem em Sprint 2) | Lock-in no Google AI Studio; latência variável entre regiões | **✅ Escolhido** |
+| **Gemini 2.5 Flash** | Free tier real (60 req/min, 1M tokens/dia); qualidade alta em português brasileiro; function calling nativo; multimodal (preparado para imagem em Sprint 2) | Lock-in no Google AI Studio; latência variável entre regiões | **✅ Escolhido** |
 | Groq + Llama 3.1 70B | Latência extremamente baixa (~500 tokens/s); free tier generoso | Qualidade em PT-BR inferior ao Gemini para domínio técnico; sem suporte multimodal | Alternativa de fallback |
 | Hugging Face + Mistral 7B Instruct | Open weights; controle granular; sugerido no esqueleto técnico do PDF | PT-BR inferior; free tier de inference API limitado em throughput | Descartado |
 | Ollama (Llama 3.1 8B local) | 100% offline; sem dependência de API externa | Exige hardware com >=16GB de RAM; deploy mais complexo; sem multimodal nativo | Reserva (para nota bônus em Sprint 2) |
@@ -127,12 +127,12 @@ Caso o serviço do Gemini fique indisponível na data da entrega da Sprint 2, o 
 
 ## Justificativa técnica
 
-A combinação **Gemini 2.0 Flash + LangChain + Streamlit** foi escolhida por cinco critérios objetivos:
+A combinação **Gemini 2.5 Flash + LangChain + Streamlit** foi escolhida por cinco critérios objetivos:
 
 1. **Custo zero verificado.** O free tier do Google AI Studio cobre 60 requisições/minuto e 1 milhão de tokens/dia — folga confortável para os testes da Sprint 2 e para a demonstração em vídeo.
 2. **Qualidade em português brasileiro.** O domínio do projeto (operação de eletropostos comerciais no Brasil) exige resposta natural em PT-BR. O Gemini é, comprovadamente em benchmarks recentes, um dos LLMs com melhor desempenho em PT-BR entre os modelos gratuitos.
 3. **Function calling nativo.** Habilita o roadmap da Sprint 2 sem mudança de provedor. Caso o grupo opte pelo diferencial de function calling (bônus indicado na seção 5.6 do documento oficial), o Gemini suporta nativamente — não exige adaptação posterior.
-4. **Multimodalidade preparada.** O Gemini 2.0 aceita entrada de imagem. Em Sprint 2, isso permite ao operador enviar uma foto da tela de erro do carregador e o chatbot processar visualmente — diferencial competitivo de alto impacto.
+4. **Multimodalidade preparada.** O Gemini 2.5 aceita entrada de imagem. Em Sprint 2, isso permite ao operador enviar uma foto da tela de erro do carregador e o chatbot processar visualmente — diferencial competitivo de alto impacto.
 5. **LangChain como camada de abstração.** Usar LangChain (em vez de chamar a API do Gemini diretamente) protege o código contra troca futura de provedor, isola dependências e oferece utilitários prontos para gestão de histórico, prompt templates e function calling.
 
 ---
